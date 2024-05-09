@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>Follow-Your-Pose v2</title>
+  <link rel="icon" type="image/x-icon" href="static/images/pose.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -46,63 +46,83 @@
 </head>
 <body>
 
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://follow-your-click.github.io/">
+            Follow-Your-Click
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Page Header-->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Follow-Your-Pose v2:<br>Multiple-Condition Guided Character Image Animation for Stable Pose Control</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                <a href="https://shayyyyyy.github.io" target="_blank">Jingyun Xue</a><sup>1*</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=q9Fn50QAAAAJ&hl=zh-CN" target="_blank">Hongfa Wang</a><sup>2*</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=Ypu45nIAAAAJ" target="_blank">Qi Tian</a><sup>2,3*</sup>,
+              </span>
+              <a href="https://mayuelala.github.io" target="_blank">Yue Ma</a><sup>2,4</sup>,
+              <a href="https://scholar.google.com/citations?hl=en&user=honY7pYAAAAJ" target="_blank">Andong Wang</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?hl=en&user=146OneEAAAAJ" target="_blank">Zhiyuan Zhao</a><sup>2</sup>,
+              <a href="https://mbobogo.github.io" target="_blank">Shaobo Min</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=kGxwGL8AAAAJ&hl=zh-CN" target="_blank">Wenzhe Zhao</a><sup>2</sup>,
+              <a href="https://zhangkaihao.github.io" target="_blank">Kaihao Zhang</a><sup>5</sup>,
+              <a href="https://www.microsoft.com/en-us/research/people/hshum" target="_blank">Heung-Yeung Shum</a><sup>6</sup>,
+              <a href="https://scholar.google.com/citations?user=AjxoEpIAAAAJ&hl=en" target="_blank">Wei Liu</a><sup>2</sup>,
+              <a href="https://ieeexplore.ieee.org/author/37086299859" target="_blank">Mengyang Liu</a><sup>2&dagger;</sup>,
+              <a href="https://whluo.github.io" target="_blank">Wenhan Luo</a><sup>1,7&dagger;</sup>
+              </span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup>1</sup>Sun Yat-sen University,&nbsp;&nbsp;&nbsp;
+                <sup>2</sup>Tencent, Hunyuan,&nbsp;&nbsp;&nbsp;
+                <sup>3</sup>Zhejiang University,&nbsp;&nbsp;&nbsp;
+                <sup>4</sup>Tsinghua University (Shenzhen),&nbsp;&nbsp;&nbsp;
+                <br><sup>5</sup>Harbin Institute of Technology (Shenzhen),&nbsp;&nbsp;&nbsp;
+                <sup>6</sup>Microsoft,&nbsp;&nbsp;&nbsp;
+                <sup>7</sup>HKUST</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+              <span class="eql-cntrb"><small><br><sup>&dagger;</sup>Indicates Corresponding Author</small></span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+            <div class="column has-text-centered">
+              <div class="publication-links">
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
@@ -112,32 +132,155 @@
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
-                </a>
-              </span>
+                  </a>
+                </span>
+
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Supplementary PDF link -->
+                <span class="link-block">
+                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM112 256H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                  </span>
+                  <span>Supplementary</span>
+                  </a>
+                </span>
+
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="far fa-images"></i>
+                    </span>
+                    <span>Dataset</span>
+                    </a>
+                </span>
+                
+                <!-- HuggingFace Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#fff" d="M45.898,36.731c0.354,1.015,0.269,2.096-0.203,3.037c-0.34,0.686-0.826,1.217-1.42,1.692	c-0.717,0.564-1.609,1.043-2.684,1.504c-1.283,0.545-2.849,1.058-3.567,1.246c-1.835,0.475-3.599,0.776-5.388,0.79	c-2.557,0.023-4.76-0.578-6.326-2.115c-0.811,0.099-1.632,0.155-2.458,0.155c-0.783,0-1.557-0.047-2.326-0.141	c-1.571,1.528-3.765,2.125-6.312,2.101c-1.788-0.014-3.552-0.315-5.392-0.79c-0.712-0.188-2.279-0.7-3.562-1.246	c-1.076-0.461-1.967-0.94-2.68-1.504c-0.599-0.475-1.085-1.006-1.425-1.692c-0.467-0.94-0.557-2.021-0.198-3.037	c-0.33-0.776-0.415-1.664-0.156-2.646c0.118-0.446,0.311-0.86,0.557-1.227c-0.052-0.193-0.094-0.39-0.123-0.606	c-0.179-1.288,0.269-2.463,1.113-3.375c0.415-0.456,0.863-0.771,1.33-0.973c-0.344-1.457-0.524-2.957-0.524-4.489	c0-10.839,8.817-19.625,19.696-19.625c3.736,0,7.232,1.034,10.214,2.839c0.538,0.329,1.066,0.682,1.571,1.058	c0.25,0.188,0.5,0.381,0.741,0.583c0.245,0.197,0.486,0.404,0.717,0.616c0.698,0.635,1.354,1.316,1.953,2.045	c0.203,0.24,0.396,0.489,0.585,0.743c0.382,0.503,0.736,1.025,1.061,1.565c0.495,0.809,0.929,1.655,1.307,2.534	c0.25,0.588,0.467,1.189,0.66,1.805c0.288,0.921,0.51,1.871,0.661,2.849c0.047,0.324,0.09,0.653,0.123,0.982	c0.066,0.658,0.104,1.326,0.104,2.007c0,1.514-0.179,2.999-0.514,4.433c0.519,0.202,1.01,0.531,1.467,1.029	c0.844,0.912,1.293,2.092,1.113,3.38c-0.028,0.212-0.071,0.409-0.123,0.602c0.245,0.367,0.439,0.78,0.557,1.227	C46.309,35.067,46.224,35.955,45.898,36.731z"></path><linearGradient id="G0Jpwzc9gkuJdD7CvJwJVa_sop9ROXku5bb_gr1" x1="5.66" x2="42.193" y1="23.549" y2="23.549" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff8100"></stop><stop offset="1" stop-color="#ff8100"></stop></linearGradient><path fill="url(#G0Jpwzc9gkuJdD7CvJwJVa_sop9ROXku5bb_gr1)" d="M40.307,23.548c0-8.992-7.334-16.281-16.381-16.281S7.546,14.557,7.546,23.548	s7.334,16.281,16.381,16.281S40.307,32.54,40.307,23.548z M5.66,23.548c0-10.027,8.178-18.155,18.266-18.155	s18.266,8.128,18.266,18.155s-8.178,18.155-18.266,18.155S5.66,33.575,5.66,23.548z"></path><linearGradient id="G0Jpwzc9gkuJdD7CvJwJVb_sop9ROXku5bb_gr2" x1="13.866" x2="35.058" y1="8.398" y2="40.313" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd21e"></stop><stop offset=".364" stop-color="#feca17"></stop><stop offset=".941" stop-color="#fbb302"></stop><stop offset="1" stop-color="#fbb000"></stop></linearGradient><path fill="url(#G0Jpwzc9gkuJdD7CvJwJVb_sop9ROXku5bb_gr2)" d="M23.926,39.921	c9.104,0,16.484-7.33,16.484-16.373S33.03,7.176,23.926,7.176S7.442,14.506,7.442,23.548S14.823,39.921,23.926,39.921z"></path><linearGradient id="G0Jpwzc9gkuJdD7CvJwJVc_sop9ROXku5bb_gr3" x1="4.956" x2="20.549" y1="34.897" y2="34.897" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd21e"></stop><stop offset=".364" stop-color="#feca17"></stop><stop offset=".941" stop-color="#fbb302"></stop><stop offset="1" stop-color="#fbb000"></stop></linearGradient><path fill="url(#G0Jpwzc9gkuJdD7CvJwJVc_sop9ROXku5bb_gr3)" d="M19.667,39.803	c1.3-1.876,1.208-3.284-0.576-5.038c-1.784-1.754-2.822-4.32-2.822-4.32s-0.388-1.49-1.271-1.353	c-0.883,0.137-1.532,2.364,0.318,3.727c1.85,1.362-0.369,2.288-1.08,1.008c-0.712-1.279-2.656-4.568-3.664-5.197	c-1.008-0.629-1.717-0.277-1.48,1.02c0.238,1.297,4.452,4.439,4.042,5.119c-0.41,0.68-1.855-0.799-1.855-0.799	s-4.522-4.049-5.506-2.994c-0.985,1.055,0.747,1.939,3.214,3.409c2.468,1.469,2.659,1.858,2.309,2.414	c-0.351,0.556-5.797-3.963-6.309-2.047c-0.511,1.916,5.559,2.472,5.184,3.794c-0.375,1.323-4.276-2.503-5.074-1.012	c-0.798,1.491,5.505,3.243,5.556,3.256C12.69,41.308,17.861,42.409,19.667,39.803z"></path><linearGradient id="G0Jpwzc9gkuJdD7CvJwJVd_sop9ROXku5bb_gr4" x1="3.166" x2="22.381" y1="34.962" y2="34.962" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff8100"></stop><stop offset="1" stop-color="#ff8100"></stop></linearGradient><path fill="url(#G0Jpwzc9gkuJdD7CvJwJVd_sop9ROXku5bb_gr4)" d="M9.759,26.511	c-0.759,0-1.438,0.31-1.911,0.872c-0.293,0.348-0.598,0.909-0.623,1.749C6.906,29.041,6.6,28.99,6.314,28.99	c-0.727,0-1.383,0.277-1.847,0.78c-0.596,0.645-0.861,1.438-0.746,2.232c0.055,0.378,0.182,0.717,0.372,1.03	c-0.4,0.322-0.695,0.77-0.838,1.309c-0.112,0.423-0.226,1.303,0.371,2.209c-0.038,0.059-0.074,0.121-0.107,0.184	c-0.359,0.677-0.382,1.443-0.065,2.156c0.481,1.08,1.675,1.932,3.994,2.845c1.443,0.568,2.763,0.932,2.774,0.935	c1.907,0.492,3.632,0.741,5.125,0.741c2.745,0,4.71-0.835,5.841-2.483c1.82-2.653,1.56-5.08-0.795-7.419	c-1.303-1.294-2.17-3.203-2.35-3.622c-0.364-1.24-1.326-2.619-2.925-2.619h0c-0.135,0-0.271,0.011-0.405,0.032	c-0.701,0.109-1.313,0.51-1.75,1.113c-0.472-0.583-0.931-1.047-1.346-1.309C10.991,26.711,10.366,26.511,9.759,26.511z M9.759,28.375c0.239,0,0.531,0.101,0.853,0.304c1,0.63,2.93,3.927,3.636,5.209c0.237,0.43,0.641,0.611,1.006,0.611	c0.723,0,1.287-0.714,0.066-1.622c-1.836-1.366-1.192-3.598-0.316-3.735c0.038-0.006,0.076-0.009,0.113-0.009	c0.797,0,1.149,1.365,1.149,1.365s1.03,2.572,2.801,4.33c1.77,1.758,1.862,3.17,0.572,5.05c-0.88,1.282-2.565,1.45-4.291,1.45	c-1.791,0-3.629-0.314-4.658-0.579c-0.051-0.013-6.303-1.652-5.511-3.147c0.133-0.251,0.353-0.352,0.629-0.352	c1.116,0,3.146,1.65,4.018,1.65c0.195,0,0.34-0.15,0.397-0.351c0.388-1.389-5.661-1.815-5.153-3.735	c0.09-0.34,0.332-0.478,0.674-0.477c1.475,0,4.783,2.577,5.476,2.577c0.053,0,0.091-0.015,0.112-0.048	c0.347-0.557,0.187-1.011-2.261-2.484c-2.449-1.473-4.198-2.295-3.22-3.352c0.113-0.122,0.272-0.176,0.466-0.176	c1.487,0,4.999,3.177,4.999,3.177s0.948,0.98,1.522,0.98c0.132,0,0.244-0.052,0.32-0.179c0.406-0.681-3.776-3.831-4.012-5.13	C8.984,28.821,9.255,28.375,9.759,28.375z"></path><linearGradient id="G0Jpwzc9gkuJdD7CvJwJVe_sop9ROXku5bb_gr5" x1="27.223" x2="42.816" y1="34.897" y2="34.897" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd21e"></stop><stop offset=".364" stop-color="#feca17"></stop><stop offset=".941" stop-color="#fbb302"></stop><stop offset="1" stop-color="#fbb000"></stop></linearGradient><path fill="url(#G0Jpwzc9gkuJdD7CvJwJVe_sop9ROXku5bb_gr5)" d="M28.105,39.803	c-1.3-1.876-1.208-3.284,0.576-5.038c1.784-1.754,2.822-4.32,2.822-4.32s0.388-1.49,1.271-1.353	c0.883,0.137,1.532,2.364-0.318,3.727c-1.85,1.362,0.368,2.288,1.08,1.008c0.712-1.279,2.656-4.568,3.664-5.197	c1.008-0.629,1.717-0.277,1.48,1.02c-0.238,1.297-4.452,4.439-4.042,5.119c0.41,0.68,1.855-0.799,1.855-0.799	S41.016,29.92,42,30.975c0.984,1.055-0.747,1.939-3.214,3.409c-2.468,1.469-2.659,1.858-2.309,2.414	c0.351,0.556,5.797-3.963,6.309-2.047c0.511,1.916-5.559,2.472-5.184,3.794c0.375,1.323,4.276-2.503,5.074-1.012	c0.798,1.491-5.505,3.243-5.556,3.256C35.083,41.308,29.912,42.409,28.105,39.803z"></path><linearGradient id="G0Jpwzc9gkuJdD7CvJwJVf_sop9ROXku5bb_gr6" x1="25.391" x2="44.607" y1="34.962" y2="34.962" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff8100"></stop><stop offset="1" stop-color="#ff8100"></stop></linearGradient><path fill="url(#G0Jpwzc9gkuJdD7CvJwJVf_sop9ROXku5bb_gr6)" d="M38.014,26.511	c0.759,0,1.437,0.31,1.911,0.872c0.293,0.348,0.598,0.909,0.623,1.749c0.318-0.091,0.624-0.142,0.91-0.142	c0.727,0,1.383,0.277,1.847,0.78c0.596,0.645,0.861,1.438,0.746,2.232c-0.055,0.378-0.182,0.717-0.372,1.03	c0.4,0.322,0.695,0.77,0.838,1.309c0.112,0.423,0.226,1.303-0.371,2.209c0.038,0.059,0.074,0.121,0.107,0.184	c0.359,0.677,0.382,1.443,0.065,2.156c-0.481,1.08-1.675,1.932-3.994,2.845c-1.443,0.568-2.763,0.932-2.774,0.935	c-1.907,0.492-3.632,0.741-5.126,0.741c-2.745,0-4.71-0.835-5.841-2.483c-1.82-2.653-1.56-5.08,0.795-7.419	c1.303-1.294,2.17-3.203,2.35-3.622c0.364-1.24,1.326-2.619,2.925-2.619h0c0.135,0,0.271,0.011,0.405,0.032	c0.7,0.109,1.313,0.51,1.75,1.113c0.472-0.583,0.931-1.047,1.346-1.309C36.781,26.711,37.406,26.511,38.014,26.511z M38.014,28.375	c-0.239,0-0.531,0.101-0.853,0.304c-1,0.63-2.93,3.927-3.636,5.209c-0.237,0.43-0.641,0.611-1.006,0.611	c-0.723,0-1.287-0.714-0.066-1.622c1.837-1.366,1.192-3.598,0.316-3.735c-0.038-0.006-0.076-0.009-0.113-0.009	c-0.797,0-1.149,1.365-1.149,1.365s-1.031,2.572-2.801,4.33c-1.77,1.758-1.862,3.17-0.572,5.05c0.88,1.282,2.565,1.45,4.291,1.45	c1.791,0,3.629-0.314,4.658-0.579c0.051-0.013,6.303-1.652,5.511-3.147c-0.133-0.251-0.353-0.352-0.629-0.352	c-1.116,0-3.146,1.65-4.018,1.65c-0.195,0-0.34-0.15-0.397-0.351c-0.388-1.389,5.661-1.815,5.153-3.735	c-0.09-0.34-0.332-0.478-0.674-0.477c-1.475,0-4.783,2.577-5.476,2.577c-0.053,0-0.091-0.015-0.112-0.048	c-0.347-0.557-0.187-1.011,2.261-2.484c2.449-1.473,4.198-2.295,3.22-3.352c-0.112-0.122-0.272-0.176-0.466-0.176	c-1.487,0-4.999,3.177-4.999,3.177s-0.948,0.98-1.521,0.98c-0.132,0-0.244-0.052-0.32-0.179c-0.406-0.681,3.776-3.831,4.012-5.13	C38.789,28.821,38.517,28.375,38.014,28.375z"></path><linearGradient id="G0Jpwzc9gkuJdD7CvJwJVg_sop9ROXku5bb_gr7" x1="17.867" x2="30.099" y1="26.353" y2="26.353" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#41474a"></stop><stop offset="1" stop-color="#323538"></stop></linearGradient><path fill="url(#G0Jpwzc9gkuJdD7CvJwJVg_sop9ROXku5bb_gr7)" d="M30.099,24.186	c0-2.109-2.735,1.105-6.116,1.119c-3.381-0.014-6.116-3.228-6.116-1.119c0,1.398,0.669,3.672,2.465,5.051	c0.357-1.23,2.322-2.215,2.603-2.074c0.4,0.201,0.377,0.76,1.048,1.252c0.671-0.492,0.648-1.05,1.048-1.252	c0.281-0.141,2.245,0.844,2.602,2.074C29.43,27.857,30.099,25.584,30.099,24.186L30.099,24.186z"></path><linearGradient id="G0Jpwzc9gkuJdD7CvJwJVh_sop9ROXku5bb_gr8" x1="20.333" x2="27.634" y1="28.782" y2="28.782" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f52537"></stop><stop offset="1" stop-color="#c8202c"></stop></linearGradient><path fill="url(#G0Jpwzc9gkuJdD7CvJwJVh_sop9ROXku5bb_gr8)" d="M25.031,27.163	c-0.4,0.201-0.377,0.76-1.048,1.252c-0.67-0.492-0.648-1.05-1.048-1.252c-0.281-0.141-2.245,0.844-2.602,2.074	c0.908,0.697,2.105,1.166,3.649,1.178c0,0,0.001,0,0.001,0c0,0,0.001,0,0.001,0c1.544-0.011,2.741-0.48,3.649-1.178	C27.277,28.007,25.312,27.021,25.031,27.163L25.031,27.163z"></path><linearGradient id="G0Jpwzc9gkuJdD7CvJwJVi_sop9ROXku5bb_gr9" x1="33.371" x2="36.401" y1="19.739" y2="19.739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff8100"></stop><stop offset="1" stop-color="#ff8100"></stop></linearGradient><path fill="url(#G0Jpwzc9gkuJdD7CvJwJVi_sop9ROXku5bb_gr9)" d="M34.886,21.254	c0.837,0,1.515-0.678,1.515-1.515c0-0.837-0.678-1.515-1.515-1.515c-0.837,0-1.515,0.678-1.515,1.515	C33.371,20.576,34.05,21.254,34.886,21.254z"></path><linearGradient id="G0Jpwzc9gkuJdD7CvJwJVj_sop9ROXku5bb_gr10" x1="11.541" x2="14.571" y1="19.739" y2="19.739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff8100"></stop><stop offset="1" stop-color="#ff8100"></stop></linearGradient><path fill="url(#G0Jpwzc9gkuJdD7CvJwJVj_sop9ROXku5bb_gr10)" d="M13.056,21.254	c0.837,0,1.515-0.678,1.515-1.515c0-0.837-0.678-1.515-1.515-1.515c-0.837,0-1.515,0.678-1.515,1.515	C11.541,20.576,12.219,21.254,13.056,21.254z"></path><linearGradient id="G0Jpwzc9gkuJdD7CvJwJVk_sop9ROXku5bb_gr11" x1="27.53" x2="32.24" y1="18.015" y2="18.015" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#41474a"></stop><stop offset="1" stop-color="#323538"></stop></linearGradient><path fill="url(#G0Jpwzc9gkuJdD7CvJwJVk_sop9ROXku5bb_gr11)" d="M29.545,19.08	c0.6,0.211,0.839,1.442,1.445,1.12c1.148-0.609,1.584-2.031,0.974-3.176c-0.611-1.145-2.036-1.58-3.185-0.971	c-1.148,0.609-1.584,2.031-0.974,3.176C28.094,19.77,29.009,18.891,29.545,19.08z"></path><linearGradient id="G0Jpwzc9gkuJdD7CvJwJVl_sop9ROXku5bb_gr12" x1="15.757" x2="20.467" y1="18.015" y2="18.015" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#41474a"></stop><stop offset="1" stop-color="#323538"></stop></linearGradient><path fill="url(#G0Jpwzc9gkuJdD7CvJwJVl_sop9ROXku5bb_gr12)" d="M18.451,19.08	c-0.6,0.211-0.839,1.442-1.445,1.12c-1.148-0.609-1.584-2.031-0.974-3.176c0.611-1.145,2.036-1.58,3.185-0.971	c1.148,0.609,1.584,2.031,0.974,3.176C19.903,19.77,18.988,18.891,18.451,19.08z"></path>
+                      </svg>
+                    </span>
+                    <span>HuggingFace Demo</span>
+                    </a>
+                </span>
+
+              </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+<!-- End page header-->
 
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+    <div class="columns is-max-desktop">
+      <video id="dollyzoom" autoplay controls muted loop playsinline height="100%" style="width: 25%;">
+        <source src="static/videos/teaser/1.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      <video id="dollyzoom" autoplay controls muted loop playsinline height="100%" style="width: 25%;">
+        <source src="static/videos/teaser/2.mp4"
+        type="video/mp4">
+      </video>
+      <video id="dollyzoom" autoplay controls muted loop playsinline height="100%" style="width: 25%;">
+        <source src="static/videos/teaser/3.mp4"
+        type="video/mp4">
+      </video>
+      <video id="dollyzoom" autoplay controls muted loop playsinline height="100%" style="width: 25%;">
+        <source src="static/videos/teaser/4.mp4"
+        type="video/mp4">
+      </video>
+    </div>      
+    <h2 class="subtitle has-text-centered">
+      Our method enables the animation of single or multiple characters.
+    </h2>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+
+      <!-- Messi & Ronaldo. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Messi & Ronaldo</h2>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%" style="width: 45%;">
+            <source src="./static/videos/teaser/mr1.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%" style="width: 45%;">
+            <source src="./static/videos/teaser/mr2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Messi & Ronaldo. -->
+
+      <!-- Curry & Durant. -->
+      <div class="column">
+        <h2 class="title is-3">Curry & Durant</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%" style="width: 45%;">
+              <source src="./static/videos/teaser/cd1.mp4"
+                      type="video/mp4">
+            </video>
+            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%" style="width: 45%;">
+              <source src="./static/videos/teaser/cd2.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <!--/ Curry & Durant. -->
+      
     </div>
   </div>
 </section>
+
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -148,7 +291,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Pose-controllable character video generation is in high demand with extensive applications for fields such as automatic advertising and content creation on social media platforms. 
+            While existing character image animation methods using pose sequences and reference images have shown promising performance, they tend to struggle with incoherent animation in complex scenarios, such as multiple character animation and body occlusion.
+            Additionally, current methods request large-scale high-quality videos with stable backgrounds and temporal consistency as training datasets, otherwise, their performance will greatly deteriorate.
+            These two issues hinder the practical utilization of character image animation tools.
+            In this paper, we propose a practical and robust framework Follow-Your-Pose v2, which can be trained on noisy open-sourced videos readily available on the internet. Multi-condition guiders are designed to address the challenges of background stability, body occlusion in multi-character generation, and consistency of character appearance.
+            Moreover, to fill the gap of fair evaluation of multi-character pose animation, we propose a new benchmark comprising approximately 4,000 frames. 
+            Extensive experiments demonstrate that our approach outperforms state-of-the-art methods by a margin of over 35\% across 2 datasets and on 7 metrics. Meanwhile, qualitative assessments reveal a significant improvement in the quality of generated video, particularly in scenarios involving complex backgrounds and body occlusion of multi-character, suggesting the superiority of our approach.              
           </p>
         </div>
       </div>
@@ -158,61 +307,42 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+<!-- Method-->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Method</h2>
+          
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
+      <img src="static/images/net_demo.png" alt="MY ALT TEXT"/>
+      <h2 class="content has-text-justified">
+        The overview of our method. The left half illustrates the data flow of the multiple condition guiders, with green and black arrows denoting training data flow, and red and black arrows indicating inference data flow. After processing the pose sequence/training video and reference images through the corresponding data flow, three condition maps are obtained. The pose sequence and three condition maps are incorporated into the initial multi-frame noise after being encoded separately by "Ref_Pose Guider", "Depth Guider", "Pose_Seq Guider", and "Optical Flow Guider" respectively. The right half shows the denoising U-Net and ReferenceNet. The initial noise is fed into U-Net for denoising to generate videos. After being encoded by VAE encoder, reference image is input into ReferenceNet to extract character features and then fed into the Spatial-Attention of U-Net for interaction. Furthermore, reference image is encoded by CLIP image encoder and then input into the Cross-Attention of U-Net and ReferenceNet for interaction. Note that the weights of U-Net and ReferenceNet are trainable, while the weights of both encoders are frozen.
       </h2>
+
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
-
-
-
+<!-- End Method -->
 
 <!-- Youtube video -->
 <section class="hero is-small is-light">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
+          <!-- <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <source src="static/videos/supplementary_material.mp4"
+            type="video/mp4">
+          </video> -->
+
+          <!-- Youtube embed code here -->
           <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/GnX9CCpH8J8?si=SjoOvJ8mPcS1fVDc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
+
         </div>
       </div>
     </div>
@@ -221,46 +351,338 @@
 <!-- End youtube video -->
 
 
-<!-- Video carousel -->
+<!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Gallery</h2>
+      <h2 class="subtitle is-5" style="margin-top: 20px;">Here we present more results to demonstrate the ability of our method to address various scenarios.</h2>
+
+      <!-- The First carousel -->
+      <h2 class="title is-4"  style="margin-top: 40px;">Single Character Animation.</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/single/t1.mp4"
+                    type="video/mp4">
           </video>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/single/t2.mp4"
+                    type="video/mp4">
           </video>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/single/t3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/single/t4.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/single/31.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/single/32.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/single/33.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/single/34.mp4"
+                    type="video/mp4">
           </video>
         </div>
       </div>
+      <!-- End First carousel -->
+
+      <!-- The Second carousel -->
+      <h2 class="title is-4"  style="margin-top: 40px;">Multiple Character Animation.</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/multiple/31.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster=""autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/multiple/32.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/multiple/33.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/multiple/t1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/multiple/t3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/multiple/t4.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+      <!-- End Second carousel -->
+
+      <!-- The Third carousel -->
+      <h2 class="title is-4"  style="margin-top: 40px;">Various Clothes.</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/clothes/1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/clothes/2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/clothes/3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/clothes/4.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/clothes/5.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/clothes/6.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/clothes/7.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/clothes/8.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/clothes/9.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+      <!-- End Third carousel -->
+
+      <!-- The 4th carousel -->
+      <h2 class="title is-4"  style="margin-top: 40px;">Various Age.</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/age/1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/age/2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/age/3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/age/4.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/age/5.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/age/6.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/age/7.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/age/8.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+      <!-- End 4th carousel -->
+
+      <!-- The 5th carousel -->
+      <h2 class="title is-4"  style="margin-top: 40px;">Various Ethnicity.</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ethnicity/1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ethnicity/2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ethnicity/3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ethnicity/4.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ethnicity/5.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ethnicity/6.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ethnicity/7.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ethnicity/8.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+      <!-- End 5th carousel -->
+
+      <!-- The 6th carousel -->
+      <h2 class="title is-4"  style="margin-top: 40px;">Complex background.</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/background/1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/background/2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/background/3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/background/4.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/background/5.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/background/6.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/background/7.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+      <!-- End 6th carousel -->
+
     </div>
   </div>
 </section>
-<!-- End video carousel -->
-
-
-
-
-
+<!-- End image carousel -->
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,15 +692,22 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
+
 <!--End paper poster -->
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -286,14 +715,30 @@
 
   <footer class="footer">
   <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
           </p>
 
         </div>
