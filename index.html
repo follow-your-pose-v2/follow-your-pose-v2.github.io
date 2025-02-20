@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Follow-Your-Pose v2</title>
+  <title>Multi-Character-Animation</title>
   <link rel="icon" type="image/x-icon" href="static/images/pose.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -91,7 +91,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Follow-Your-Pose v2:<br>Multiple-Condition Guided Character Image Animation for Stable Pose Control</h1>
+            <h1 class="title is-1 publication-title">Towards Multiple Character Image Animation Through Enhancing Implicit Decoupling</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -133,7 +133,7 @@
               Heung-Yeung Shum<sup>5</sup>,
               Wei Liu<sup>2</sup>,
               Mengyang Liu<sup>2&dagger;</sup>,
-              Wenhan Luo<sup>1,6&dagger;</sup>
+              Wenhan Luo<sup>1,6&Dagger;</sup>
               </span>
             </div> -->
 
@@ -146,7 +146,8 @@
                 <br><sup>3</sup>Harbin Institute of Technology (Shenzhen),&nbsp;&nbsp;&nbsp;
                 <sup>4</sup>HKUST</span>
               <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-              <span class="eql-cntrb"><small><br><sup>&dagger;</sup>Indicates Corresponding Author</small></span>
+              <span class="eql-cntrb"><small><br><sup>&dagger;</sup>Indicates Project Leader</small></span>
+              <span class="eql-cntrb"><small><br><sup>&Dagger;</sup>Indicates Corresponding Author</small></span>
             </div>
 
             <div class="column has-text-centered">
@@ -319,13 +320,14 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Pose-controllable character video generation is in high demand with extensive applications for fields such as automatic advertising and content creation on social media platforms. 
-            While existing character image animation methods using pose sequences and reference images have shown promising performance, they tend to struggle with incoherent animation in complex scenarios, such as multiple character animation and body occlusion.
-            Additionally, current methods request large-scale high-quality videos with stable backgrounds and temporal consistency as training datasets, otherwise, their performance will greatly deteriorate.
-            These two issues hinder the practical utilization of character image animation tools.
-            In this paper, we propose a practical and robust framework Follow-Your-Pose v2, which can be trained on noisy open-sourced videos readily available on the internet. Multi-condition guiders are designed to address the challenges of background stability, body occlusion in multi-character generation, and consistency of character appearance.
-            Moreover, to fill the gap of fair evaluation of multi-character pose animation, we propose a new benchmark comprising approximately 4,000 frames. 
-            Extensive experiments demonstrate that our approach outperforms state-of-the-art methods by a margin of over 35% across 2 datasets and on 7 metrics. Meanwhile, qualitative assessments reveal a significant improvement in the quality of generated video, particularly in scenarios involving complex backgrounds and body occlusion of multi-character, suggesting the superiority of our approach.              
+            Controllable character image animation has a wide range of applications.
+            Although existing studies have consistently improved performance, challenges persist in the field of character image animation, particularly concerning stability in complex backgrounds and tasks involving multiple characters.
+            To address these challenges, we propose a novel multi-condition guided framework for character image animation, employing several well-designed input modules to enhance the implicit decoupling capability of the model.
+            First, the optical flow guider calculates the background optical flow map as guidance information, which enables the model to implicitly learn to decouple the background motion into background constants and background momentum during training, and generate a stable background by setting zero background momentum during inference.
+            Second, the depth order guider calculates the order map of the characters, which transforms the depth information into the positional information of multiple characters. This facilitates the implicit learning of decoupling different characters, especially in accurately separating the occluded body parts of multiple characters.
+            Third, the reference pose map is input to enhance the ability to decouple character texture and pose information in the reference image.
+            Furthermore, to fill the gap of fair evaluation of multi-character image animation in the community, we propose a new benchmark comprising approximately $4,000$ frames.
+            Extensive qualitative and quantitative evaluations demonstrate that our method excels in generating high-quality character animations, especially in scenarios of complex backgrounds and multiple characters.              
           </p>
         </div>
       </div>
