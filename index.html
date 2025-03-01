@@ -54,7 +54,7 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-  <div class="navbar-menu">
+  <!-- <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
       <a class="navbar-item" href="https://mayuelala.github.io">
       <span class="icon">
@@ -82,7 +82,7 @@
       </div>
     </div>
 
-  </div>
+  </div> -->
 </nav>
 
 <!-- Page Header-->
@@ -98,7 +98,7 @@
                 <a href="https://shayyyyyy.github.io" target="_blank">Jingyun Xue</a><sup>1,2*</sup>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=q9Fn50QAAAAJ&hl=zh-CN" target="_blank">Hongfa Wang</a><sup>2*</sup>,
+                <a href="https://scholar.google.com/citations?user=q9Fn50QAAAAJ&hl=zh-CN" target="_blank">Hongfa Wang</a><sup>2,3*</sup>,
               </span>
               <span class="author-block">
                 <a href="https://scholar.google.com/citations?hl=zh-CN&user=Ypu45nIAAAAJ" target="_blank">Qi Tian</a><sup>2*</sup>,
@@ -108,8 +108,8 @@
               <a href="https://scholar.google.com/citations?hl=en&user=146OneEAAAAJ" target="_blank">Zhiyuan Zhao</a><sup>2</sup>,
               <a href="https://mbobogo.github.io" target="_blank">Shaobo Min</a><sup>2</sup>,
               <a href="https://scholar.google.com/citations?user=kGxwGL8AAAAJ&hl=zh-CN" target="_blank">Wenzhe Zhao</a><sup>2</sup>,
-              <a href="https://zhangkaihao.github.io" target="_blank">Kaihao Zhang</a><sup>3</sup>,
-              <a href="https://www.microsoft.com/en-us/research/people/hshum" target="_blank">Heung-Yeung Shum</a><sup>4</sup>,
+              <a href="https://zhangkaihao.github.io" target="_blank">Kaihao Zhang</a><sup>5</sup>,
+              <a href="https://www.microsoft.com/en-us/research/people/hshum" target="_blank">Heung-Yeung Shum</a><sup>3,4</sup>,
               <a href="https://scholar.google.com/citations?user=AjxoEpIAAAAJ&hl=en" target="_blank">Wei Liu</a><sup>2</sup>,
               <a href="https://ieeexplore.ieee.org/author/37086299859" target="_blank">Mengyang Liu</a><sup>2&dagger;</sup>,
               <a href="https://whluo.github.io" target="_blank">Wenhan Luo</a><sup>4&Dagger;</sup>
@@ -133,7 +133,7 @@
               Heung-Yeung Shum<sup>5</sup>,
               Wei Liu<sup>2</sup>,
               Mengyang Liu<sup>2&dagger;</sup>,
-              Wenhan Luo<sup>1,6&Dagger;</sup>
+              Wenhan Luo<sup>1,6&dagger;</sup>
               </span>
             </div> -->
 
@@ -143,8 +143,9 @@
               <span class="author-block">
                 <sup>1</sup>Sun Yat-sen University,&nbsp;&nbsp;&nbsp;
                 <sup>2</sup>Tencent, Hunyuan,&nbsp;&nbsp;&nbsp;
-                <br><sup>3</sup>Harbin Institute of Technology (Shenzhen),&nbsp;&nbsp;&nbsp;
-                <sup>4</sup>HKUST</span>
+                <sup>3</sup>Tsinghua Univerisity,&nbsp;&nbsp;&nbsp;
+                <sup>4</sup>HKUST</span>,
+                <br><sup>5</sup>Harbin Institute of Technology (Shenzhen)</span>
               <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
               <span class="eql-cntrb"><small><br><sup>&dagger;</sup>Indicates Project Leader</small></span>
               <span class="eql-cntrb"><small><br><sup>&Dagger;</sup>Indicates Corresponding Author</small></span>
@@ -326,8 +327,8 @@
             First, the optical flow guider calculates the background optical flow map as guidance information, which enables the model to implicitly learn to decouple the background motion into background constants and background momentum during training, and generate a stable background by setting zero background momentum during inference.
             Second, the depth order guider calculates the order map of the characters, which transforms the depth information into the positional information of multiple characters. This facilitates the implicit learning of decoupling different characters, especially in accurately separating the occluded body parts of multiple characters.
             Third, the reference pose map is input to enhance the ability to decouple character texture and pose information in the reference image.
-            Furthermore, to fill the gap of fair evaluation of multi-character image animation in the community, we propose a new benchmark comprising approximately $4,000$ frames.
-            Extensive qualitative and quantitative evaluations demonstrate that our method excels in generating high-quality character animations, especially in scenarios of complex backgrounds and multiple characters.              
+            Furthermore, to fill the gap of fair evaluation of multi-character image animation in the community, we propose a new benchmark comprising approximately 4,000 frames.
+            Extensive qualitative and quantitative evaluations demonstrate that our method excels in generating high-quality character animations, especially in scenarios of complex backgrounds and multiple characters.
           </p>
         </div>
       </div>
